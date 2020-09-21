@@ -1,49 +1,33 @@
-body {
-    font-family: Arial, Helvetica, sans-serif; 
-    color: #222;
-}
+.c-menu__item {
+  background-color: #B3CB65;
+  color: #000000;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center; }
 
-body > header {
-    background-color: #627A14; 
-    padding: 1vh 1vw; 
-    height: 10vh; 
-    box-sizing: border-box; 
-    color: #fff;
-}
+.c-menu__item2 {
+  font-size: 20px;
+  color: #000000;
+  background-color: #B3CB65;
+  text-align: center; }
 
-body > main {
+.demo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: #000000;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center; }
 
-    height: 85vh;
-}
-
-body > footer {
-   
-    width: 15vw; 
-    background-color: #B3CB65;
-}
-
-h1.app-title {
-    font-size: 20px;
-}
+.c-menu__item3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+  background-color: #B3CB65;
+  text-align: center; }
 
 section.main-feature {
-    float: left; 
-    background-color: #fbfbfb; 
-    width: 80vw; 
-    height: 85vh;
-}
-aside.secundary-feature { 
-    background-color: #6F4D8F; 
-    width: 15vw; 
-    height: 100vh; 
-    color: #fff;
-    position: fixed;
-    top: 0;
-    right: 0;
-    
-}
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  text-align: center; }
 
-
-
-
-
+/*# sourceMappingURL=main.css.map */
