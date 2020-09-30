@@ -1,12 +1,23 @@
 
+alert("Bem vindos!");
+
+
 let x=document.getElementById(`demo`);
 
-const aluno = {nome: `Bruno`, idade: '33', local: `PUC`};
-let {nome, idade, local} = aluno;
+const aluno = {cidade: `RJ`, idade: '33', local: `PUC`};
+let {cidade, idade, local} = aluno;
 
-console.log(nome);
+console.log(cidade);
 console.log(idade);
 console.log(local);
+
+
+
+let newWay = (nome, sobrenome) => {
+  return 'Aluno ' + nome + ', ' + sobrenome;
+};
+
+console.log( newWay('Bruno', 'Bartolomeu') );
 
 
 function getLocation ()
@@ -43,7 +54,7 @@ let marker=new google.maps.Marker({position:latlon,map:map,title:`Você está Aq
 
 
 
-function showError(error)
+function showError (error)
 {
 switch(error.code) 
 {
@@ -61,3 +72,4 @@ case error.UNKNOWN_ERROR:
   break;
 }
 }
+
