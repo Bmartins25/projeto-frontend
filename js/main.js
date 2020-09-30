@@ -1,8 +1,15 @@
 
 let x=document.getElementById("demo");
 
+const aluno = {nome: 'Bruno', idade: '33', local: 'PUC'};
+let {nome, idade, local} = aluno;
 
-function getLocation()
+console.log(nome);
+console.log(idade);
+console.log(local);
+
+
+function getLocation ()
 {
 if (navigator.geolocation)
 {
@@ -11,7 +18,7 @@ navigator.geolocation.getCurrentPosition(showPosition);
 else{x.innerHTML="O seu navegador não suporta Geolocalização.";}
 }
 
-function showPosition(position)
+ function showPosition(position)
 
 {
 lat=position.coords.latitude;
@@ -34,6 +41,8 @@ let marker=new google.maps.Marker({position:latlon,map:map,title:"Você está Aq
 
 }
 
+
+
 function showError(error)
 {
 switch(error.code) 
@@ -51,4 +60,10 @@ case error.UNKNOWN_ERROR:
   x.innerHTML="Algum erro desconhecido aconteceu."
   break;
 }
+}
+class opiniao {
+  constructor(altura, largura) {
+    this.altura = altura;
+    this.largura = largura;
+  }
 }
