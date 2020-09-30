@@ -1,7 +1,7 @@
 
-let x=document.getElementById("demo");
+let x=document.getElementById(`demo`);
 
-const aluno = {nome: 'Bruno', idade: '33', local: 'PUC'};
+const aluno = {nome: `Bruno`, idade: '33', local: `PUC`};
 let {nome, idade, local} = aluno;
 
 console.log(nome);
@@ -15,7 +15,7 @@ if (navigator.geolocation)
 {
 navigator.geolocation.getCurrentPosition(showPosition);
 }
-else{x.innerHTML="O seu navegador não suporta Geolocalização.";}
+else{x.innerHTML= `O seu navegador não suporta Geolocalização.`;}
 }
 
  function showPosition(position)
@@ -24,7 +24,7 @@ else{x.innerHTML="O seu navegador não suporta Geolocalização.";}
 lat=position.coords.latitude;
 lon=position.coords.longitude;
 latlon=new google.maps.LatLng(lat, lon)
-mapholder=document.getElementById('mapholder')
+mapholder=document.getElementById(`mapholder`)
 mapholder.style.height='250px';
 mapholder.style.width='500px';
 
@@ -36,8 +36,8 @@ mapTypeControl:false,
 navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
 };
 
-let map=new google.maps.Map(document.getElementById("mapholder"),myOptions);
-let marker=new google.maps.Marker({position:latlon,map:map,title:"Você está Aqui!"});
+let map=new google.maps.Map(document.getElementById(`mapholder`),myOptions);
+let marker=new google.maps.Marker({position:latlon,map:map,title:`Você está Aqui!`});
 
 }
 
@@ -48,22 +48,16 @@ function showError(error)
 switch(error.code) 
 {
 case error.PERMISSION_DENIED:
-  x.innerHTML="Usuário rejeitou a solicitação de Geolocalização."
+  x.innerHTML=`Usuário rejeitou a solicitação de Geolocalização.`
   break;
 case error.POSITION_UNAVAILABLE:
-  x.innerHTML="Localização indisponível."
+  x.innerHTML=`Localização indisponível.`
   break;
 case error.TIMEOUT:
-  x.innerHTML="O tempo da requisição expirou."
+  x.innerHTML=`O tempo da requisição expirou.`
   break;
 case error.UNKNOWN_ERROR:
-  x.innerHTML="Algum erro desconhecido aconteceu."
+  x.innerHTML=`Algum erro desconhecido aconteceu.`
   break;
 }
-}
-class opiniao {
-  constructor(altura, largura) {
-    this.altura = altura;
-    this.largura = largura;
-  }
 }
