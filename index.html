@@ -21,48 +21,66 @@
 
   <meta name="theme-color" content="#fafafa">
   
+  
+  
+  
 </head>
 
 <body> 
-<header>
-  <h1> Página Aula - Prof. Renato Martins</h1>
-  <nav> Menu </nav>
-  <br><br>
+  <div class="container">
+    <div class="c-menu__item">
+      <h1> Página Aula - Prof. Renato Martins</h1>
+      <nav> Bem vindos! </nav>
+    </div>
 
-</header>
+<br><br>
 
 <main>
 
-  <h1 class="app-title">
-    <b>Menu de navegação</b>
+ 
+  <div class="c-menu__item2">
    
-    </h1>
-    <p id="demo"><u>Clique no botão para obter sua localização:</u></p>
-    <center><button onclick="getLocation()">Clique Aqui</button></center>
-
-  <div id="mapholder"></div>
+    <h1>
+      <b>Menu Inicial</b></h1>
+    </div>
     
-<br>
-<section class= "main-feature">
-<u> Tarefa Front-End </u> 
-</section>
 
-<aside class="secundary-feature">
-<b>Acabaram as férias! kk
-<br><br>
- - Hora de estudar e trabalhar!</b>
-</aside>
+      <center><p id="demo"><u>Clique no botão para obter sua localização:</u></p>
+        <div id="mapholder"></div>
+        <br>
+      <button onclick="getLocation()">Clique Aqui</button> 
+      
+    </center>
+
+<br>
+
+<div class="c-menu__item3">
+
+  <footer>
+    <h4> Autor: Bruno Bartolomeu </h4>
+  <h5>Tarefa de Nivelamento</h5>
+</footer>
+
+</div>
+
+
+  
+  
+
+  <section class= "main-feature">
+    <h6><u> Tarefa Front-End </u> </h6>
+    </section>
+
 
 </main>
 
-<footer> Autor: Bruno Bartolomeu </footer>
-  <!-- Add your site or application content here -->
-  <p>Página Tarefa Nivelamento</p>
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
- 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrPgDQPb8kfsjZu7F4VFc8YkFKtJ8HGRU"></script>
+  
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 
@@ -70,6 +88,7 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
+  
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
