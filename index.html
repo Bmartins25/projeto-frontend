@@ -26,20 +26,31 @@
 <body> 
   <div class="container">
     <div class="c-menu__item">
-      <h1> Front-End Avançado </h1>
-      <nav> Página em costante mudança.</nav>
+      <h1> Tarefa inicial - Front End </h1>
+      <nav> Disciplina de Pós-Graduação - Modo Remoto 2020 </nav>
     </div>
 
-<br><br>
+<br>
 
 <main>
+
+  <div class="c-menu">
+  <div role="application" aria-labelledby="calendar" aria-describedby="info">
+    <h1 id="calendar">Calendário</h1>
+    <p id="info">
+        Não vamos querer que vc perca seus compromissos não é?
+    </p>
+    <div role="grid">
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FSao_Paulo&amp;src=YmJhcnRvbG9tZXUubmV0QGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y2xhc3Nyb29tMTExNzU2MDc4MDAyODY5NzU3OTgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%23c26401&amp;color=%230B8043" style="border:solid 1px #777" width="300" height="300" frameborder="0" scrolling="no"></iframe>
+    </div>
+</div>
+</div>
 
  
   <div class="c-menu__item2">
    
-    <h1>
-      <b>Menu Inicial</b></h1>
-    </div>
+    <h1><b>E que tal descobrimos onde você está hein?</b></h1>
+  </div>
     
 
       <center><p id="demo"><u>Clique no botão para obter sua localização:</u></p>
@@ -55,7 +66,7 @@
 
   <footer>
     <h4> Autor: Bruno Bartolomeu </h4>
-  <h5>Tarefa de Nivelamento</h5>
+  
 </footer>
 
 </div>
@@ -65,7 +76,7 @@
   
 
   <section class= "main-feature">
-    <h6><u> Tarefa Front-End </u> </h6>
+    <h6><u> Até a próxima! </u> </h6>
     </section>
 
 
@@ -77,6 +88,13 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrPgDQPb8kfsjZu7F4VFc8YkFKtJ8HGRU"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js").then(function () {
+        console.log("Service Worker Registered");
+      });
+    }
+  </script>
   
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

@@ -1,9 +1,9 @@
 {
-  "name": " ",
+  "name": "projeto-frontend",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
+  "description": "Projeto front-end",
+  "keywords": [],
+  "license": "ISC",
   "author": "",
   "scripts": {
     "build": "parcel build index.html",
@@ -13,5 +13,17 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bmartins25/projeto-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bmartins25/projeto-frontend/issues"
+  },
+  "homepage": "https://github.com/Bmartins25/projeto-frontend#readme"
 }
