@@ -1,4 +1,4 @@
-<!doctype html>
+<DOCTYPE html>
 <html class="no-js" lang="">
 
 <head>
@@ -18,6 +18,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  
 
   <meta name="theme-color" content="#fafafa">
  
@@ -41,7 +42,7 @@
         Não vamos querer que vc perca seus compromissos não é?
     </p>
     <div role="grid">
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FSao_Paulo&amp;src=YmJhcnRvbG9tZXUubmV0QGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y2xhc3Nyb29tMTExNzU2MDc4MDAyODY5NzU3OTgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%23c26401&amp;color=%230B8043" style="border:solid 1px #777" width="300" height="300" frameborder="0" scrolling="no"></iframe>
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FSao_Paulo&amp;src=YmJhcnRvbG9tZXUubmV0QGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y2xhc3Nyb29tMTExNzU2MDc4MDAyODY5NzU3OTgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%23c26401&amp;color=%230B8043" style="border:solid 1px #777" width="250" height="250" frameborder="0" scrolling="no"></iframe>
     </div>
 </div>
 </div>
@@ -89,12 +90,13 @@
   <script src="js/main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrPgDQPb8kfsjZu7F4VFc8YkFKtJ8HGRU"></script>
   <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js").then(function () {
-        console.log("Service Worker Registered");
-      });
+  
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+               .then(function() { console.log('Service Worker Registered'); });
     }
   </script>
+ 
   
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
